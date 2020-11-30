@@ -1,4 +1,4 @@
-# openMINDS_controlledTerms
+# openMINDS_controlledTerms v1
 
 The openMINDS_controlledTerms repository is part of the open Metadata 
 Initiative for Neuroscience Data Structures (openMINDS). It contains the 
@@ -8,8 +8,10 @@ related ontologies.
 
 For more information on openMINDS in general and the processing pipelines for the schema-templates please go to the main repository: https://github.com/HumanBrainProject/openMINDS
 
-## v1.0 (schema-templates)
-The controlledTerms v1.0 schemas are JSON-schema inspired schema-templates with a few custom template-properties (prefixed with `"_"`) which allow us to simplify their readability and increase their reusability.
+The versions of the repository are organized in different branches and contain a predefined directory structure:
+
+## schemas
+The controlledTerms schemas are JSON-schema inspired schema-templates with a few custom template-properties (prefixed with `"_"`) which allow us to simplify their readability and increase their reusability.
 
 Except for the schema-template-property (`"_type"`), the schema-template is identical across 
 all controlled terms (cf. the "abstract" schema-template used for all controlled terms:
@@ -21,7 +23,7 @@ generic controlledTerm.schema.tpl.json (cf., e.g., `"_type": "https://openminds.
 This differentiation facilitates the identification of conceptually related 
 terms (cf. v1.0-terminologies).
 
-## v1.0-terminologies
+## terminologies
 The controlled terminologies are stored as JSON-LDs, conceptually grouped 
 according to the corresponding schema-type. For simplicity the name of the 
 term defined in each JSON-LD is reused in the filename and identifier (cf. 
